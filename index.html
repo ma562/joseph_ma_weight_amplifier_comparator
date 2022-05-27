@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" style = "scroll-behavior: smooth;">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale = 1.0">
+		<title>Weight amplifier & comparator</title>
+		<link rel="icon" href="images/mass_amplifier-modified.png">
+		<link rel = "stylesheet" href="style.css">
+	</head>
+
+	<nav class = "navbar">
+		<div class = "max-width">
+			<div class = "logo"><a href="#">Weight amplifier & comparator</a></div>
+			<ul class = "menu">
+				<li><a href="https://ma562.github.io/joseph_ma/#projects">Go Back</a></li>
+			</ul>
+		</div>
+	</nav>
+
+	<body>
+		<div class = "top_info">
+			<div class = "pic1">
+				<img src = "images/weight.jpg" class = "pic" width = "100%" alt = "">
+			</div>
+			<div class = "information">
+				<div class = "text">About</div>
+				<p>
+					The focus on the problem lies in disposal control instead of production. It requires a solution which prevents recyclable waste wrongly going towards landfills instead of recycle centers. The paper towel industry is likely to increase to over $1 billion in worth in the next coming years and the client, Kimberly-Clark is seeking to develop a method to address the problem. <br><br>
+					To combat the problem, my team and I came up with an effective method to differentiate paper towels from most other waste for our final project in the course ENGR 131: Transforming Ideas to Innovation I.<br><br>
+					The weight amplifier & comparator takes advantage of the absorbent properties of paper towels and checks the gain which is the ratio of the weight after blasting the contents with water to the weight before doing so. Because most other waste such as glass/plastic bottles, plastic wrappers, aluminum cans and juice cartons do not absorb liquid as well, they will be expected to have a significantly lower gain than that of paper towels. Using the value of the gain, we were able to succesfully differentiate paper towels from other waste with a high accuracy.
+				</p>
+			</div>
+		</div>
+		<br>
+		<div class = "mid_info">
+			<div class = "procedure">
+				<div class = "text">Procedures</div>
+				1. A sensor is placed at the door of the bin to detect incoming waste. Once detected, the waste will be compressed in order to filter out any potentially absorbed liquid in the waste at the beginning. <br><br>
+				2. The dried and wrung out waste is weighed. The measured value can be denoted as W<sub>input</sub>.<br><br>
+				3. The waste is then heavily sprayed with water.<br><br>
+				4. The soaked waste will then be weighed again. The measured value can be denoted as W<sub>output</sub>.<br><br>
+				5. The gain is calculated which can be denoted as A<sub>W</sub> (A<sub>W</sub> = W<sub>output</sub> / W<sub>input</sub>). The waste is either sent to container A (for paper towels) or B (any other waste) depending on the value of A<sub>W</sub>. Paper towels will most likely yield a relatively high gain while other waste such as plastic bottles may yield a lower gain closer to 1 meaning it has not absorbed any water at all.
+
+			</div>
+			<div class = "data">
+				<div class = "text">Initial Data</div>
+				A sample size of 46 paper towels were used in the testing process.<br>
+				<img src = "images/data.png" class = "pic" width = "100%" alt = "">
+			</div>
+
+		</div>
+	</body>
+</html>

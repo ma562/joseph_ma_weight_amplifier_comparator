@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+}
+
+.max-width{
+	max-width: 1300px;
+	padding: 0 80px;
+	margin: auto;
+}
+
+/*navbar*/
+.navbar {
+	z-index: 2;
+	position: fixed;
+	width: 100%;
+	padding: 15px 0;
+	font-family: 'Ubuntu', 'sans-serif;';
+	transition: all 0.3s ease;
+	background: #00274c;
+}
+
+.navbar.sticky {
+	padding: 15px 0;
+	background: #00274c;
+}
+
+.navbar .max-width{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.navbar .logo a{
+	color: #fff;
+	font-size: 35px;
+	font-weight: 600;
+}
+
+.navbar .menu li{
+	list-style: none;
+	display: inline-block;
+}
+
+.navbar .menu li a{
+	color: #fff;
+	font-size: 18px;
+	font-weight: 500;
+	margin-left: 25px;
+}
+
+.top_info {
+	display: flex;
+	flex-wrap: wrap;
+	align-content: center;
+	justify-content: space-between;
+	top: 100px;
+	position: relative;
+}
+
+.pic1{
+	width: 35%;
+	left: 2%;
+	position: relative;
+}
+
+.information{
+	width: 57%;
+	font-family: 'Poppins', sans-serif;
+	color: #00274c;
+	margin-right: 20px;
+	text-align: justify;
+	position: relative;
+	right: 2%;
+}
+
+.text{
+	font-size: 25px;
+	font-weight: 600;
+	margin-bottom: 10px;
+}
+
+.mid_info {
+	font-family: 'Poppins', sans-serif;
+	color: #00274c;
+	display: flex;
+	flex-wrap: wrap;
+	align-content: center;
+	justify-content: space-between;
+	top: 100px;
+	position: relative;
+}
+
+.data{
+	position: relative;
+	width: 40%;
+	right: 2%;
+}
+
+.procedure{
+	position: relative;
+	width: 55%;
+	left: 2%;
+	background: #e3e3e3;
+	border-radius: 15px;
+	padding: 5px;
+}
+.sub {
+    vertical-align: sub;
+    font-size: small;
+}
+
+@media (max-width: 900px){
+	.pic1, .information, .data, .procedure {
+		flex: 100%;
+		left: 0%;
+		right: 0%;
+	}
+
+	.information, .data {
+		padding: 15px;
+	}
+}
+
+@media (max-width: 500px){
+	.top_info {
+		top: 80px;
+	}
+	.navbar .logo a{
+		color: #fff;
+		font-size: 15px;
+		font-weight: 600;
+	}
+	.navbar .menu li a{
+		font-size: 12px;
+	}
+	.text {
+		font-size: 18px;
+	}
+}
