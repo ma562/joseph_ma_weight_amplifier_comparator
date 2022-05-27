@@ -114,6 +114,34 @@
     font-size: small;
 }
 
+.bottom_info {
+	display: flex;
+	flex-wrap: wrap;
+	align-content: center;
+	justify-content: space-between;
+	top: 100px;
+	position: relative;
+}
+
+.final_data {
+	font-family: 'Poppins', sans-serif;
+	color: #00274c;
+	position: relative;
+	width: 50%;
+	left: 2%;
+}
+
+.conclusion {
+	font-family: 'Poppins', sans-serif;
+	color: #00274c;
+	background: #e3e3e3;
+	position: relative;
+	right: 2%;
+	width: 45%;
+	border-radius: 15px;
+	padding: 5px;
+}
+
 @media (max-width: 900px){
 	.pic1, .information, .data, .procedure {
 		flex: 100%;
