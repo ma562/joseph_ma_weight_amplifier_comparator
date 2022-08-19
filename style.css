@@ -159,17 +159,20 @@
 	}
 }
 
-@media (max-width: 500px){
-	.top_info {
-		top: 80px;
-	}
+@media (max-width: 750px) {
 	.navbar .logo a{
 		color: #fff;
-		font-size: 15px;
+		font-size: 9px;
 		font-weight: 600;
 	}
 	.navbar .menu li a{
-		font-size: 12px;
+		font-size: 7px;
+	}
+}
+
+@media (max-width: 500px){
+	.top_info {
+		top: 80px;
 	}
 	.text {
 		font-size: 18px;
